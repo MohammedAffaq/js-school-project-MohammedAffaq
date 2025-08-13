@@ -13,6 +13,8 @@ Created the base HTML structure for the Timeline App using semantic tags.
 - Semantic structure with <main>, <article>, <figure> and an image of pc
 
 ## Task 2 – CSS: Styling & Responsive Layout
+
+### Description
 Styled the Timeline App to be visually appealing and responsive.
 
 ### What’s Included
@@ -25,7 +27,20 @@ Styled the Timeline App to be visually appealing and responsive.
   - Tablet (768–1023px)
   - Desktop (≥1024px)
 
+## Task 3 – JavaScript: Interactivity & Dynamic Content
 
+### Description
+Added interactivity to the Timeline App by fetching event data, dynamically rendering it on the page and enabling modal popups for detailed event views.
+
+### What’s Included
+- Loaded event details from data/events.json using fetch() in script.js.
+- Created event cards dynamically based on JSON data (year, title, image).
+- Clicking on an event image opens a modal in the center of the screen.
+- Modal displays:
+  - Event title
+  - Center-aligned event image
+  - Event description
+- Added a Close button (✖) to dismiss the modal.
 
 ## Goal
 A timeline web app built from scratch using HTML, CSS, JS, TypeScript and React.
@@ -33,3 +48,4 @@ A timeline web app built from scratch using HTML, CSS, JS, TypeScript and React.
 ## Roadmap
 ✔️ HTML Structure
 ✔️ CSS
+✔️ JavaScript
