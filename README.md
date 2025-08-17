@@ -42,6 +42,24 @@ Added interactivity to the Timeline App by fetching event data, dynamically rend
   - Event description
 - Added a Close button (✖) to dismiss the modal.
 
+
+## Task 4 – TypeScript: Static Typing & Modular Code
+
+### Description
+Introduced TypeScript to the Timeline App for better maintainability, static typing and modular code organization. 
+Converted the previous JavaScript logic into TypeScript with strict mode enabled.
+
+### What’s Included
+- Initialized TypeScript with tsconfig.json (strict mode enabled).
+- Converted script.js into modular TypeScript files inside src/:
+  - types.ts → Defined interfaces for event data.
+  - fetcher.ts → Handles fetching and parsing of events.json.
+  - renderer.ts → Dynamically renders timeline cards.
+  - modal.ts → Opens and closes modal with event details.
+  - index.ts → Entry point that ties everything together.
+- Configured build process to compile TypeScript into JavaScript (dist/ folder).
+- Verified the app runs smoothly in the browser using the compiled JS.
+
 ## Goal
 A timeline web app built from scratch using HTML, CSS, JS, TypeScript and React.
 
@@ -49,3 +67,5 @@ A timeline web app built from scratch using HTML, CSS, JS, TypeScript and React.
 ✔️ HTML Structure
 ✔️ CSS
 ✔️ JavaScript
+✔️ TypeScript
+
