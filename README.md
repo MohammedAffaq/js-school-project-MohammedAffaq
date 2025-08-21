@@ -60,12 +60,33 @@ Converted the previous JavaScript logic into TypeScript with strict mode enabled
 - Configured build process to compile TypeScript into JavaScript (dist/ folder).
 - Verified the app runs smoothly in the browser using the compiled JS.
 
+
+## Task 5 – React + TypeScript: Component-Based Rebuild
+
+### Description
+Rebuilt the Timeline App as a modern React application using TypeScript. Introduced component-based architecture for better modularity and scalability.
+
+### What’s Included
+- Vite React + TypeScript setup for fast development.
+- Created modular components:
+    - `<Header>` - Logo + theme toggle button.
+    - `<Timeline>` - Maps over event data and renders markers.
+    - `<EventMarker>` - Represents each event card (year, title, image).
+    - `<EventModal>` - Modal popup with detailed event view (opens on click, closes with ✖).
+- State management with hooks:
+    - useState + useEffect for loading JSON data and managing modal visibility.
+- Theme toggle support (light/dark mode) with persistent styles.
+- Responsiveness maintained (mobile, tablet, desktop).
+- Styling integrated from previous tasks, updated for React structure.
+
 ## Goal
 A timeline web app built from scratch using HTML, CSS, JS, TypeScript and React.
 
 ## Roadmap
+
 ✔️ HTML Structure
 ✔️ CSS
 ✔️ JavaScript
 ✔️ TypeScript
+✔️ React + TypeScript
 
