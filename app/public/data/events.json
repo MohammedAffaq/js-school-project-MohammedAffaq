@@ -1,0 +1,58 @@
+[
+  {
+    "year": 1945,
+    "title": "ENIAC",
+    "description": "The Electronic Numerical Integrator and Computer (ENIAC) was among the earliest electronic general-purpose computers.",
+    "imageURL": "assets/eniac.jpeg",
+    "category": "Early Computers"
+  },
+  {
+    "year": 1956,
+    "title": "IBM 305 RAMAC",
+    "description": "First computer with a hard disk drive, storing up to 5 MB of data.",
+    "imageURL": "assets/ibm305.jpeg",
+    "category": "Storage Milestones"
+  },
+  {
+    "year": 1971,
+    "title": "Intel 4004",
+    "description": "The first commercially available microprocessor, revolutionizing computing.",
+    "imageURL": "assets/microprocessor.jpeg",
+    "category": "Microprocessors"
+  },
+  {
+    "year": 1977,
+    "title": "Apple II",
+    "description": "One of the first successful mass-produced microcomputers.",
+    "imageURL": "assets/gui.jpeg",
+    "category": "Personal Computers"
+  },
+  {
+    "year": 1981,
+    "title": "IBM PC",
+    "description": "Set the standard for personal computers with open architecture.",
+    "imageURL": "assets/ibmpc.jpeg",
+    "category": "Personal Computers"
+  },
+  {
+    "year": 1989,
+    "title": "World Wide Web",
+    "description": "Tim Berners-Lee invents the World Wide Web, making the internet accessible.",
+    "imageURL": "assets/internet.jpeg",
+    "category": "Internet"
+  },
+  {
+    "year": 2007,
+    "title": "iPhone",
+    "description": "Apple's iPhone redefined the smartphone industry with a touch interface and app ecosystem.",
+    "imageURL": "assets/iphone.jpeg",
+    "category": "Mobile Computing"
+  },
+  {
+    "year": 2023,
+    "title": "AI-Powered Laptops",
+    "description": "Modern laptops integrate AI chips to accelerate local machine learning tasks.",
+    "imageURL": "assets/ai.jpeg",
+    "category": "Artificial Intelligence"
+  }
+]
