@@ -1,3 +1,4 @@
+/* ========== RESET ========== */
 * {
   margin: 0;
   padding: 0;
@@ -45,7 +46,7 @@ body.dark .modal-content {
   color: #EEE;
 }
 
-/* style for header */
+/* ========== HEADER ========== */
 header {
   display: flex;
   align-items: center;
@@ -57,6 +58,14 @@ header {
 
 header img {
   height: 50px;
+  margin-right: 10px;
+}
+
+header .app-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  flex: 1; /* take remaining space between logo and button */
 }
 
 header button {
@@ -70,11 +79,14 @@ header button {
   transition: background 0.3s ease;
 }
 
-header button:hover {
+header button:hover,
+header button:focus-visible {
   background: #13315C;
+  outline: 2px solid #FFD60A;
+  outline-offset: 3px;
 }
 
-/* Navbar */
+/* ========== NAVBAR ========== */
 nav {
   background-color: #8DA9C4;
   padding: 1rem;
@@ -83,7 +95,7 @@ nav {
   color: #333;
 }
 
-/* Timeline card */
+/* ========== TIMELINE CARDS ========== */
 #timeline {
   display: grid;
   gap: 2rem;
@@ -102,8 +114,11 @@ nav {
   transition: transform 0.2s ease, background 0.3s ease, color 0.3s ease;
 }
 
-#timeline article:hover {
+#timeline article:hover,
+#timeline article:focus-visible {
   transform: translateY(-4px);
+  outline: 3px solid #FFD60A;
+  outline-offset: 3px;
 }
 
 #timeline figure {
@@ -135,7 +150,14 @@ nav {
   color: #555;
 }
 
-/* modal style */
+/* Highlight active marker with aria-current */
+[aria-current="true"] {
+  border: 2px solid #FFD60A;
+  border-radius: 8px;
+  box-shadow: 0 0 0 3px rgba(255, 214, 10, 0.5);
+}
+
+/* ========== MODAL ========== */
 .modal-overlay {
   position: fixed;
   inset: 0;
@@ -159,6 +181,11 @@ nav {
   animation: fadeIn 0.3s ease-in-out;
 }
 
+body.dark .modal-content {
+  background: #1e1e1e;
+  color: #EEE;
+}
+
 .modal-close {
   position: absolute;
   top: 10px;
@@ -169,8 +196,11 @@ nav {
   cursor: pointer;
 }
 
-.modal-close:hover {
+.modal-close:hover,
+.modal-close:focus-visible {
   color: #333;
+  outline: 2px solid #FFD60A;
+  outline-offset: 3px;
 }
 
 .modal-content img {
@@ -180,14 +210,21 @@ nav {
   margin-bottom: 1rem;
 }
 
-/* Animations */
+/* ========== ANIMATIONS ========== */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(-20px); }
   to   { opacity: 1; transform: translateY(0); }
 }
 
-/* responsiveness */
+/* ========== RESPONSIVENESS ========== */
 @media (max-width: 767px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  header .app-title {
+    margin: 0.5rem 0;
+  }
   #timeline {
     grid-template-columns: 1fr;
   }

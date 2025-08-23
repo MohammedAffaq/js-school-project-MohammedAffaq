@@ -1,7 +1,8 @@
 export interface TimelineEvent {
-  year: number | string;
+  year: number;
   title: string;
   description: string;
-  imageURL: string; 
+  imageURL: string;
   category: string;
+  id?: string;
 }
