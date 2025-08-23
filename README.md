@@ -103,6 +103,10 @@ This task focuses on making the Timeline App accessible for users with disabilit
 ## Goal
 A timeline web app built from scratch using HTML, CSS, JS, TypeScript and React.
 
+## 🌟 Live Demo
+
+🔗 [Visit My Portfolio](https://timelinewebapp.netlify.app/)  
+
 ## Roadmap
 
 ✔️ HTML Structure
