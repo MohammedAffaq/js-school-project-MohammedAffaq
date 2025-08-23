@@ -79,6 +79,27 @@ Rebuilt the Timeline App as a modern React application using TypeScript. Introdu
 - Responsiveness maintained (mobile, tablet, desktop).
 - Styling integrated from previous tasks, updated for React structure.
 
+##  Task 6 – Accessibility Improvements
+
+### Description
+This task focuses on making the Timeline App accessible for users with disabilities by implementing ARIA roles, proper focus management, keyboard navigation and WCAG AA compliant color contrast. The goal is to ensure that all users, including those relying on assistive technologies, can effectively interact with the app.
+
+### What's Included
+- **ARIA roles and attributes** added to key elements.
+  - `role="dialog"` for the modal or use of the `<dialog>` tag.
+  - `aria-current` on the active timeline marker.
+- **Focus management**
+  - Focus trapped inside the modal when open.
+  - Focus returns to the triggering marker when the modal closes.
+- **Keyboard accessibility**
+  - Timeline markers navigable via Tab/Arrow keys.
+  - Modal closable using the `Esc` key.
+- **Color contrast verification**
+  - All text meets WCAG AA contrast ratio requirements (≥4.5:1).
+- **Documentation**
+  - Accessibility changes and considerations documented in `ACCESSIBILITY.md`.
+
+
 ## Goal
 A timeline web app built from scratch using HTML, CSS, JS, TypeScript and React.
 
@@ -89,4 +110,6 @@ A timeline web app built from scratch using HTML, CSS, JS, TypeScript and React.
 ✔️ JavaScript
 ✔️ TypeScript
 ✔️ React + TypeScript
+✔️ Web Accessibility
+
 
