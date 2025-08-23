@@ -1,4 +1,4 @@
-import ReactDOM from "react-dom";
+import { forwardRef } from "react";
 import type { TimelineEvent } from "../types";
 
 type Props = {
@@ -6,21 +6,32 @@ type Props = {
   onClose: () => void;
 };
 
-export default function EventModal({ event, onClose }: Props) {
-  const root = document.getElementById("modal-root");
-  if (!root || !event) return null;
+// Forward the ref to the modal overlay so App can trap focus inside it
+const EventModal = forwardRef<HTMLDivElement, Props>(({ event, onClose }, ref) => {
+  if (!event) return null;
 
-  const modal = (
-    <div className="modal-overlay active" onClick={(e) => e.target === e.currentTarget && onClose()}>
+  return (
+    <div
+      ref={ref}
+      className="modal-overlay"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modal-title"
+      aria-describedby="modal-description"
+      onClick={(e) => e.target === e.currentTarget && onClose()}
+    >
       <div className="modal-content">
-        <button className="modal-close" onClick={onClose}>&times;</button>
-        <h2>{`${event.year} - ${event.title}`}</h2>
+        <button className="modal-close" aria-label="Close dialog" onClick={onClose}>
+          &times;
+        </button>
+        <h2 id="modal-title">{`${event.year} - ${event.title}`}</h2>
         <img src={event.imageURL} alt={event.title} />
         <p><strong>Category:</strong> {event.category}</p>
-        <p>{event.description}</p>
+        <p id="modal-description">{event.description}</p>
       </div>
     </div>
   );
+});
 
-  return ReactDOM.createPortal(modal, root);
-}
+EventModal.displayName = "EventModal";
+export default EventModal;
