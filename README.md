@@ -12,7 +12,7 @@ Created the base HTML structure for the Timeline App using semantic tags.
 - An empty <div id="modal"> for future modal content
 - Semantic structure with <main>, <article>, <figure> and an image of pc
 
-## Task 2 – CSS: Styling & Responsive Layout
+## Task 2 – CSS and Preprocessors
 
 ### Description
 Styled the Timeline App to be visually appealing and responsive.
@@ -27,7 +27,7 @@ Styled the Timeline App to be visually appealing and responsive.
   - Tablet (768–1023px)
   - Desktop (≥1024px)
 
-## Task 3 – JavaScript: Interactivity & Dynamic Content
+## Task 3 – JavaScript Fundamentals. Dynamic Web Development
 
 ### Description
 Added interactivity to the Timeline App by fetching event data, dynamically rendering it on the page and enabling modal popups for detailed event views.
@@ -43,7 +43,7 @@ Added interactivity to the Timeline App by fetching event data, dynamically rend
 - Added a Close button (✖) to dismiss the modal.
 
 
-## Task 4 – TypeScript: Static Typing & Modular Code
+## Task 4 – Typescript. Fundamentals
 
 ### Description
 Introduced TypeScript to the Timeline App for better maintainability, static typing and modular code organization. 
@@ -61,7 +61,7 @@ Converted the previous JavaScript logic into TypeScript with strict mode enabled
 - Verified the app runs smoothly in the browser using the compiled JS.
 
 
-## Task 5 – React + TypeScript: Component-Based Rebuild
+## Task 5 – React. Building Dynamic User Interfaces
 
 ### Description
 Rebuilt the Timeline App as a modern React application using TypeScript. Introduced component-based architecture for better modularity and scalability.
@@ -79,7 +79,7 @@ Rebuilt the Timeline App as a modern React application using TypeScript. Introdu
 - Responsiveness maintained (mobile, tablet, desktop).
 - Styling integrated from previous tasks, updated for React structure.
 
-##  Task 6 – Accessibility Improvements
+##  Task 6 – Web Accessibility – Designing for Everyone
 
 ### Description
 This task focuses on making the Timeline App accessible for users with disabilities by implementing ARIA roles, proper focus management, keyboard navigation and WCAG AA compliant color contrast. The goal is to ensure that all users, including those relying on assistive technologies, can effectively interact with the app.
@@ -105,7 +105,7 @@ A timeline web app built from scratch using HTML, CSS, JS, TypeScript and React.
 
 ## 🌟 Live Demo
 
-🔗 [Visit My Portfolio](https://timelinewebapp.netlify.app/)  
+🔗 [Live Website](https://timelinewebapp.netlify.app/)  
 
 ## Roadmap
 
